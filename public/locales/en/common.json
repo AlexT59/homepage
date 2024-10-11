@@ -956,8 +956,8 @@
     },
     "storjnode": {
       "monthearn": "Month earn",
+      "monthbandwidthusage": "Month BW usage",
       "diskusage": "Disk usage",
-      "bandwidthusage": "Used bandwidth",
       "onlinescore": "Online score"
     }
 }
