@@ -9,7 +9,7 @@ export default function Component({ service }) {
 
   const { widget } = service;  
 
-  const { payoutData, payoutError } = useWidgetAPI(widget, "payout");
+  const { data: payoutData, error: payoutError } = useWidgetAPI(widget, "payout");
 
   if (payoutError) {
     return <Container service={service} error={payoutError} />;
@@ -23,7 +23,7 @@ export default function Component({ service }) {
     );
   }
 
-  const monthPayout = (widget.currentMonth.held + widget.currentMonth.payout) / 100
+  const monthPayout = (payoutData.currentMonth.held + payoutData.currentMonth.payout) / 100
 
   return (
     <Container service={service}>
