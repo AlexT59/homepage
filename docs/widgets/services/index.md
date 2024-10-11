@@ -113,6 +113,7 @@ You can also find a list of all available service widgets in the sidebar navigat
 - [Speedtest Tracker](speedtest-tracker.md)
 - [Stash](stash.md)
 - [Stocks](stocks.md)
+- [Storj Node](storjnode.md)
 - [SwagDashboard](swagdashboard.md)
 - [Syncthing Relay Server](syncthing-relay-server.md)
 - [Tailscale](tailscale.md)
