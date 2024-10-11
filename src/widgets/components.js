@@ -109,6 +109,7 @@ const components = {
   speedtest: dynamic(() => import("./speedtest/component")),
   stash: dynamic(() => import("./stash/component")),
   stocks: dynamic(() => import("./stocks/component")),
+  storjnode: dynamic(() => import("./storjnode/component")),
   strelaysrv: dynamic(() => import("./strelaysrv/component")),
   swagdashboard: dynamic(() => import("./swagdashboard/component")),
   tailscale: dynamic(() => import("./tailscale/component")),
