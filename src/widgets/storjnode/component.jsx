@@ -11,12 +11,16 @@ export default function Component({ service }) {
 
   const { data: dashData, error: dashError } = useWidgetAPI(widget, "dashboard");
   const { data: payoutData, error: payoutError } = useWidgetAPI(widget, "payout");
+  const { data: satelData, error satelError } = useWidgetAPI(widget, "satellites");
 
   if (dashError) {
     return <Container service={service} error={dashError} />;
   }
   if (payoutError) {
     return <Container service={service} error={payoutError} />;
+  }
+  if (satelError) {
+    return <Container service={service} error={satelError} />;
   }
 
   if (!dashData || !payoutData) {
@@ -29,6 +33,11 @@ export default function Component({ service }) {
 
   const diskUsage = dashData.diskSpace.available / dashData.diskSpace.used
   const monthPayout = (payoutData.currentMonth.held + payoutData.currentMonth.payout) / 100
+  const onlineScore = 0
+  satelData.forEach(function (sat, index) {
+    onlineScore += sat.onlineScore
+  });
+  onlineScore /= satelData.length
 
   return (
     <Container service={service}>
@@ -50,6 +59,12 @@ export default function Component({ service }) {
         value={t("common.bytes", {
           value: dashData.bandwidth.used,
           maximumFractionDigits: 1,
+        })}
+      />
+      <Block
+        label="storjnode.onlinescore"
+        value={t("common.percent", {
+          value: onlineScore,
         })}
       />
     </Container>

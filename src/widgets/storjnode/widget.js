@@ -11,6 +11,9 @@ const widget =  {
     "payout": {
       endpoint: "sno/estimated-payout",
     },
+    "satellites": {
+      endpoint: "sno/satellites",
+    },
   },
 };
 
