@@ -9,13 +9,17 @@ export default function Component({ service }) {
 
   const { widget } = service;  
 
+  const { data: dashData, error: dashError } = useWidgetAPI(widget, "dashboard");
   const { data: payoutData, error: payoutError } = useWidgetAPI(widget, "payout");
 
+  if (dashError) {
+    return <Container service={service} error={dashError} />;
+  }
   if (payoutError) {
     return <Container service={service} error={payoutError} />;
   }
 
-  if (!payoutData) {
+  if (!dashData || !payoutData) {
     return (
       <Container service={service}>
         <Block label="storjnode.monthearn" />
@@ -23,6 +27,7 @@ export default function Component({ service }) {
     );
   }
 
+  const diskUsage = dashData.diskSpace.available / dashData.diskSpace.used
   const monthPayout = (payoutData.currentMonth.held + payoutData.currentMonth.payout) / 100
 
   return (
@@ -32,6 +37,19 @@ export default function Component({ service }) {
         value={t("common.number", {
           value: monthPayout,
           decimals: 2,
+        })}
+      />
+      <Block
+        label="storjnode.diskusage"
+        value={t("common.percent", {
+          value: diskUsage,
+        })}
+      />
+      <Block
+        label="storjnode.bandwidthusage"
+        value={t("common.bytes", {
+          value: dashData.bandwidth.used,
+          maximumFractionDigits: 1,
         })}
       />
     </Container>

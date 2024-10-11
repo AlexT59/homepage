@@ -5,6 +5,9 @@ const widget =  {
   proxyHandler: genericProxyHandler ,
 
   mappings: {
+    "dashboard": {
+      endpoint: "sno",
+    },
     "payout": {
       endpoint: "sno/estimated-payout",
     },
