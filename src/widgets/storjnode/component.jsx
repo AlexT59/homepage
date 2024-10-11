@@ -23,10 +23,13 @@ export default function Component({ service }) {
     return <Container service={service} error={satelError} />;
   }
 
-  if (!dashData || !payoutData) {
+  if (!dashData || !payoutData || !satelData) {
     return (
       <Container service={service}>
-        <Block label="storjnode.monthearn" />
+        <Block label="storjnode.monthearn"/>
+        <Block label="storjnode.monthbandwidthusage"/>
+        <Block label="storjnode.diskusage"/>
+        <Block label="storjnode.onlinescore"/>
       </Container>
     );
   }
