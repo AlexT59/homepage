@@ -953,5 +953,8 @@
       "reminders": "Reminders",
       "nextReminder": "Next Reminder",
       "none": "None"
+    },
+    "storjnode": {
+      "monthearn": "Month earn"
     }
 }
