@@ -71,7 +71,7 @@ export default function Component({ service }) {
         label="storjnode.onlinescore"
         value={t("common.percent", {
           value: onlineScore,
-          decimals: 1,
+          maximumFractionDigits: 1,
         })}
       />
     </Container>
