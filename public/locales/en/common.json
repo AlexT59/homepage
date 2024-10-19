@@ -959,5 +959,11 @@
       "monthbandwidthusage": "Month BW usage",
       "diskusage": "Disk usage",
       "onlinescore": "Online score"
+    },
+    "vikunja": {
+      "projects": "Active Projects",
+      "tasks7d": "Tasks Due This Week",
+      "tasksOverdue": "Overdue Tasks",
+      "tasksInProgress": "Tasks In Progress"
     }
 }
