@@ -34,9 +34,10 @@ export default function Component({ service }) {
     );
   }
 
-  const diskUsage = dashData.diskSpace.used / dashData.diskSpace.available * 100;
-  let diskUsageStr = `${t("common.bytes", { value: dashData.diskSpace.used, decimals: 0 })}`;
-  diskUsageStr += ` (${t("common.percent", { value: diskUsage })})`;
+  const diskUsage = dashData.diskSpace.used + dashData.diskSpace.trash + dashData.diskSpace.overused;
+  const diskUsagePer = diskUsage / dashData.diskSpace.available * 100;
+  let diskUsageStr = `${t("common.bytes", { value: diskUsage, decimals: 0 })}`;
+  diskUsageStr += ` (${t("common.percent", { value: diskUsagePer })})`;
 
   const monthPayout = (payoutData.currentMonth.held + payoutData.currentMonth.payout) / 100;
 
