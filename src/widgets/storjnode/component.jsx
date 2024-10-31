@@ -34,12 +34,12 @@ export default function Component({ service }) {
     );
   }
 
-  const diskUsage = dashData.diskSpace.used + dashData.diskSpace.trash + dashData.diskSpace.overused;
+  const diskUsage = dashData.diskSpace.used;
   const diskUsagePer = diskUsage / dashData.diskSpace.available * 100;
   let diskUsageStr = `${t("common.bytes", { value: diskUsage, decimals: 0 })}`;
   diskUsageStr += ` (${t("common.percent", { value: diskUsagePer })})`;
 
-  const monthPayout = (payoutData.currentMonth.held + payoutData.currentMonth.payout) / 100;
+  const monthPayout = payoutData.currentMonth.payout / 100;
 
   let onlineScore = 0;
   satelData.audits.forEach((sat) => {
@@ -61,12 +61,8 @@ export default function Component({ service }) {
         label="storjnode.monthbandwidthusage"
         value={t("common.bytes", {
           value: dashData.bandwidth.used,
-          maximumFractionDigits: 1,
+          maximumFractionDigits: 2,
         })}
-      />
-      <Block
-        label="storjnode.diskusage"
-        value={ diskUsageStr }
       />
       <Block
         label="storjnode.onlinescore"
@@ -74,6 +70,10 @@ export default function Component({ service }) {
           value: onlineScore,
           maximumFractionDigits: 1,
         })}
+      />
+      <Block
+        label="storjnode.diskusage"
+        value={ diskUsageStr }
       />
     </Container>
   );

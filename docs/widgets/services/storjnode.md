@@ -7,6 +7,8 @@ Learn more about [Storj Node](https://storj.dev/node).
 
 Allowed fields: `["monthearn", "monthbandwidthusage", "diskusage", "onlinescore"]`  
 
+All data are for the current month, exepted for the disk usage.  
+
 The online score is an average of the online score of all satellites.  
 
 ```yaml

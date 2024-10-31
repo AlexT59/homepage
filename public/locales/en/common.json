@@ -955,8 +955,8 @@
       "none": "None"
     },
     "storjnode": {
-      "monthearn": "Month earn",
-      "monthbandwidthusage": "Month BW usage",
+      "monthearn": "Earns",
+      "monthbandwidthusage": "BW usage",
       "diskusage": "Disk usage",
       "onlinescore": "Online score"
     },
