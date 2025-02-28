@@ -120,7 +120,7 @@
         "grid_power": "Grid",
         "home_power": "Consumption",
         "charge_power": "Charger",
-        "watt_hour": "Wh"
+        "kilowatt": "kW"
     },
     "flood": {
         "download": "Download",
@@ -148,7 +148,9 @@
         "up": "Up",
         "received": "Received",
         "sent": "Sent",
-        "externalIPAddress": "Ext. IP"
+        "externalIPAddress": "Ext. IP",
+        "externalIPv6Address": "Ext. IPv6",
+        "externalIPv6Prefix": "Ext. IPv6-Prefix"
     },
     "caddy": {
         "upstreams": "Upstreams",
@@ -702,6 +704,10 @@
         "processed": "Processed",
         "time": "Time"
     },
+    "firefly": {
+        "networth": "Net Worth",
+        "budget": "Budget"
+    },
     "grafana": {
         "dashboards": "Dashboards",
         "datasources": "Data Sources",
@@ -988,6 +994,9 @@
       "name": "Name",
       "systems": "Systems",
       "up": "Up",
+      "down": "Down",
+      "paused": "Paused",
+      "pending": "Pending",
       "status": "Status",
       "updated": "Updated",
       "cpu": "CPU",

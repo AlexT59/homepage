@@ -13,6 +13,14 @@ You can customize the title of the page if you'd like.
 title: My Awesome Homepage
 ```
 
+## Description
+
+You can customize the description of the page if you'd like.
+
+```yaml
+description: A description of my awesome homepage
+```
+
 ## Start URL
 
 You can customize the start_url as required for installable apps. The default is "/".
@@ -117,6 +125,22 @@ layout:
 As an example, this would produce the following layout:
 
 <img width="1260" alt="Screenshot 2022-09-15 at 8 03 57 PM" src="https://user-images.githubusercontent.com/82196/190466646-8ca94505-0fcf-4964-9687-3a6c7cd3144f.png">
+
+### Icons-Only Layout
+
+You can also specify the an icon-only layout for bookmarks, either like so:
+
+```yaml
+layout:
+  Media:
+    iconsOnly: true
+```
+
+or globally:
+
+```yaml
+bookmarksStyle: icons
+```
 
 ### Sorting
 

@@ -2,11 +2,10 @@ import { useTranslation } from "react-i18next";
 import { useEffect, useState, useRef, useCallback, useContext } from "react";
 import classNames from "classnames";
 import useSWR from "swr";
+import { SettingsContext } from "utils/contexts/settings";
 
 import ResolvedIcon from "./resolvedicon";
 import { getStoredProvider, searchProviders } from "./widgets/search/search";
-
-import { SettingsContext } from "utils/contexts/settings";
 
 export default function QuickLaunch({ servicesAndBookmarks, searchString, setSearchString, isOpen, close }) {
   const { t } = useTranslation();
@@ -129,7 +128,7 @@ export default function QuickLaunch({ servicesAndBookmarks, searchString, setSea
   useEffect(() => {
     const abortController = new AbortController();
 
-    if (searchString.length === 0) setResults([]);
+    if (searchString.trim().length === 0) setResults([]);
     else {
       let newResults = servicesAndBookmarks.filter((r) => {
         const nameMatch = r.name.toLowerCase().includes(searchString);

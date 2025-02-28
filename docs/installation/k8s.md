@@ -210,9 +210,17 @@ rules:
       - get
       - list
   - apiGroups:
-      - traefik.containo.us
+      - traefik.io
     resources:
       - ingressroutes
+    verbs:
+      - get
+      - list
+  - apiGroups:
+      - gateway.networking.k8s.io
+    resources:
+      - httproutes
+      - gateways
     verbs:
       - get
       - list
