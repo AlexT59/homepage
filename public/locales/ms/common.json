@@ -148,7 +148,9 @@
         "up": "Hidup",
         "received": "Diterima",
         "sent": "Telah dihantar",
-        "externalIPAddress": "IP Luaran"
+        "externalIPAddress": "IP Luaran",
+        "externalIPv6Address": "Ext. IPv6",
+        "externalIPv6Prefix": "Ext. IPv6-Prefix"
     },
     "caddy": {
         "upstreams": "Upstreams",
@@ -176,7 +178,7 @@
         "connectedAp": "Connected APs",
         "activeUser": "Peranti aktif",
         "alerts": "Perhatian",
-        "connectedGateway": "Connected gateways",
+        "connectedGateways": "Connected gateways",
         "connectedSwitches": "Connected switches"
     },
     "nzbget": {
@@ -566,7 +568,8 @@
     "gluetun": {
         "public_ip": "IP Awam",
         "region": "Rantau",
-        "country": "Negara"
+        "country": "Negara",
+        "port_forwarded": "Port Forwarded"
     },
     "hdhomerun": {
         "channels": "Saluran",
@@ -701,6 +704,10 @@
         "processing": "Processing",
         "processed": "Sudah diprosess",
         "time": "Time"
+    },
+    "firefly": {
+        "networth": "Net Worth",
+        "budget": "Budget"
     },
     "grafana": {
         "dashboards": "Dashboards",
@@ -850,7 +857,8 @@
         "physicalRelease": "Edaran fizikal",
         "digitalRelease": "Edaran digital",
         "noEventsToday": "Tiada agenda untuk hari ini!",
-        "noEventsFound": "Tiada agenda dijumpai"
+        "noEventsFound": "Tiada agenda dijumpai",
+        "errorWhenLoadingData": "Error when loading calendar data"
     },
     "romm": {
         "platforms": "Platform",
@@ -879,7 +887,8 @@
     "gitea": {
         "notifications": "Notifications",
         "issues": "Issues",
-        "pulls": "Pull Requests"
+        "pulls": "Pull Requests",
+        "repositories": "Repositories"
     },
     "stash": {
         "scenes": "Adegan",
@@ -1010,5 +1019,40 @@
         "issues": "Issues",
         "merges": "Merge Requests",
         "projects": "Projects"
+    },
+    "apcups": {
+        "status": "Status",
+        "load": "Beban",
+        "bcharge": "Bateri dicas",
+        "timeleft": "Masa Tinggal"
+    },
+    "karakeep": {
+        "bookmarks": "Bookmarks",
+        "favorites": "Favorites",
+        "archived": "Archived",
+        "highlights": "Highlights",
+        "lists": "Lists",
+        "tags": "Tanda nama"
+    },
+    "slskd": {
+        "slskStatus": "Rangkaian",
+        "connected": "Connected",
+        "disconnected": "Sambungan Terputus",
+        "updateStatus": "Update",
+        "update_yes": "Sudah Ada",
+        "update_no": "Terkemaskini",
+        "downloads": "Downloads",
+        "uploads": "Uploads",
+        "sharedFiles": "Files"
+    },
+    "jellystat": {
+        "songs": "Lagu",
+        "movies": "Filem",
+        "episodes": "Episod",
+        "other": "Other"
+    },
+    "checkmk": {
+        "serviceErrors": "Service issues",
+        "hostErrors": "Host issues"
     }
 }

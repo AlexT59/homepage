@@ -148,7 +148,9 @@
         "up": "Op",
         "received": "Ontvang",
         "sent": "Gestuur",
-        "externalIPAddress": "Ext. IP"
+        "externalIPAddress": "Ext. IP",
+        "externalIPv6Address": "Ext. IPv6",
+        "externalIPv6Prefix": "Ext. IPv6-Voorvoegsel"
     },
     "caddy": {
         "upstreams": "Stroomop",
@@ -176,7 +178,7 @@
         "connectedAp": "Gekoppelde APs",
         "activeUser": "Aktiewe toestelle",
         "alerts": "Waarskuwings",
-        "connectedGateway": "Gekoppelde poorte",
+        "connectedGateways": "Gekoppelde poorte",
         "connectedSwitches": "Gekoppelde skakelaars"
     },
     "nzbget": {
@@ -566,7 +568,8 @@
     "gluetun": {
         "public_ip": "Publieke IP",
         "region": "Streek",
-        "country": "Land"
+        "country": "Land",
+        "port_forwarded": "Poort Aangestuur"
     },
     "hdhomerun": {
         "channels": "Kanale",
@@ -701,6 +704,10 @@
         "processing": "Verwerking",
         "processed": "Verwerk",
         "time": "Tyd"
+    },
+    "firefly": {
+        "networth": "Netto Waarde",
+        "budget": "Begroting"
     },
     "grafana": {
         "dashboards": "Dashboards",
@@ -850,7 +857,8 @@
         "physicalRelease": "Fisiese Vrylating",
         "digitalRelease": "Digitale Vrylating",
         "noEventsToday": "Geen gebeure vir vandag nie!",
-        "noEventsFound": "Geen gebeure gevind nie"
+        "noEventsFound": "Geen gebeure gevind nie",
+        "errorWhenLoadingData": "Fout tydens laai van kalenderdata"
     },
     "romm": {
         "platforms": "Platform",
@@ -879,7 +887,8 @@
     "gitea": {
         "notifications": "Kennisgewings",
         "issues": "Kwessies",
-        "pulls": "Trek Versoeke"
+        "pulls": "Trek Versoeke",
+        "repositories": "Bewaarplekke"
     },
     "stash": {
         "scenes": "Tonele",
@@ -1010,5 +1019,40 @@
         "issues": "Kwessies",
         "merges": "Saamvleg Versoeke",
         "projects": "Projekte"
+    },
+    "apcups": {
+        "status": "Status",
+        "load": "Las",
+        "bcharge": "Batterylading",
+        "timeleft": "Oorblywende Tyd"
+    },
+    "karakeep": {
+        "bookmarks": "Boekmerke",
+        "favorites": "Gunstelinge",
+        "archived": "Geargiveer",
+        "highlights": "Hoogtepunte",
+        "lists": "Lyste",
+        "tags": "Merkers"
+    },
+    "slskd": {
+        "slskStatus": "Netwerk",
+        "connected": "Gekoppel",
+        "disconnected": "Ontkoppel",
+        "updateStatus": "Opdateer",
+        "update_yes": "Beskikbaar",
+        "update_no": "Op Datum",
+        "downloads": "Aflaaie",
+        "uploads": "Oplaaie",
+        "sharedFiles": "Lêers"
+    },
+    "jellystat": {
+        "songs": "Liedjies",
+        "movies": "Flieks",
+        "episodes": "Episodes",
+        "other": "Ander"
+    },
+    "checkmk": {
+        "serviceErrors": "Diensprobleme",
+        "hostErrors": "Gasheerprobleme"
     }
 }

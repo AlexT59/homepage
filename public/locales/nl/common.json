@@ -148,7 +148,9 @@
         "up": "Online",
         "received": "Ontvangen",
         "sent": "Verzonden",
-        "externalIPAddress": "Ext. IP"
+        "externalIPAddress": "Ext. IP",
+        "externalIPv6Address": "Ext. IPv6",
+        "externalIPv6Prefix": "Ext. IPv6-Prefix"
     },
     "caddy": {
         "upstreams": "Upstreams",
@@ -176,7 +178,7 @@
         "connectedAp": "Verbonden APs",
         "activeUser": "Actieve apparaten",
         "alerts": "Meldingen",
-        "connectedGateway": "Verbonden gateways",
+        "connectedGateways": "Connected gateways",
         "connectedSwitches": "Verbonden switches"
     },
     "nzbget": {
@@ -566,7 +568,8 @@
     "gluetun": {
         "public_ip": "Publiek IP",
         "region": "Regio",
-        "country": "Land"
+        "country": "Land",
+        "port_forwarded": "Port Forwarded"
     },
     "hdhomerun": {
         "channels": "Kanalen",
@@ -701,6 +704,10 @@
         "processing": "Verwerken",
         "processed": "Verwerkt",
         "time": "Tijd"
+    },
+    "firefly": {
+        "networth": "Net Worth",
+        "budget": "Budget"
     },
     "grafana": {
         "dashboards": "Dashboards",
@@ -850,7 +857,8 @@
         "physicalRelease": "Fysieke versie",
         "digitalRelease": "Digitale versie",
         "noEventsToday": "Geen gebeurtenissen voor vandaag!",
-        "noEventsFound": "Geen gebeurtenissen gevonden"
+        "noEventsFound": "Geen gebeurtenissen gevonden",
+        "errorWhenLoadingData": "Error when loading calendar data"
     },
     "romm": {
         "platforms": "Platformen",
@@ -879,7 +887,8 @@
     "gitea": {
         "notifications": "Notificaties",
         "issues": "Problemen",
-        "pulls": "Pull Requests"
+        "pulls": "Pull Requests",
+        "repositories": "Repositories"
     },
     "stash": {
         "scenes": "Scènes",
@@ -1010,5 +1019,40 @@
         "issues": "Problemen",
         "merges": "Merge Verzoeken",
         "projects": "Projecten"
+    },
+    "apcups": {
+        "status": "Status",
+        "load": "Belasting",
+        "bcharge": "Batterij opladen",
+        "timeleft": "Resterende Tijd"
+    },
+    "karakeep": {
+        "bookmarks": "Bookmarks",
+        "favorites": "Favorites",
+        "archived": "Archived",
+        "highlights": "Highlights",
+        "lists": "Lists",
+        "tags": "Label"
+    },
+    "slskd": {
+        "slskStatus": "Netwerk",
+        "connected": "Verbonden",
+        "disconnected": "Verbinding verbroken",
+        "updateStatus": "Update",
+        "update_yes": "Beschikbaar",
+        "update_no": "Bijgewerkt",
+        "downloads": "Downloads",
+        "uploads": "Uploads",
+        "sharedFiles": "Bestanden"
+    },
+    "jellystat": {
+        "songs": "Nummers",
+        "movies": "Films",
+        "episodes": "Afleveringen",
+        "other": "Other"
+    },
+    "checkmk": {
+        "serviceErrors": "Service issues",
+        "hostErrors": "Host issues"
     }
 }

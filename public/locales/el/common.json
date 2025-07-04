@@ -148,7 +148,9 @@
         "up": "Ping up",
         "received": "Ληφθέντα",
         "sent": "Απεσταλμένα",
-        "externalIPAddress": "Εξωτερική IP"
+        "externalIPAddress": "Εξωτερική IP",
+        "externalIPv6Address": "Ext. IPv6",
+        "externalIPv6Prefix": "Ext. IPv6-Prefix"
     },
     "caddy": {
         "upstreams": "Upstreams",
@@ -176,7 +178,7 @@
         "connectedAp": "Συνδεδεμένα APs",
         "activeUser": "Ενεργές συσκευές",
         "alerts": "Ειδοποιήσεις",
-        "connectedGateway": "Συνδεδεμένα gateways",
+        "connectedGateways": "Connected gateways",
         "connectedSwitches": "Συνδεδεμένα switches"
     },
     "nzbget": {
@@ -566,7 +568,8 @@
     "gluetun": {
         "public_ip": "Δημόσια ΙΡ",
         "region": "Περιοχή",
-        "country": "Χώρα"
+        "country": "Χώρα",
+        "port_forwarded": "Port Forwarded"
     },
     "hdhomerun": {
         "channels": "Κανάλια",
@@ -701,6 +704,10 @@
         "processing": "Σε επεξεργασία",
         "processed": "Σε επεξεργασία",
         "time": "Ώρα"
+    },
+    "firefly": {
+        "networth": "Net Worth",
+        "budget": "Budget"
     },
     "grafana": {
         "dashboards": "Πίνακας Ελέγχου",
@@ -850,7 +857,8 @@
         "physicalRelease": "Physical release",
         "digitalRelease": "Digital release",
         "noEventsToday": "No events for today!",
-        "noEventsFound": "No events found"
+        "noEventsFound": "No events found",
+        "errorWhenLoadingData": "Error when loading calendar data"
     },
     "romm": {
         "platforms": "Platforms",
@@ -879,7 +887,8 @@
     "gitea": {
         "notifications": "Notifications",
         "issues": "Issues",
-        "pulls": "Pull Requests"
+        "pulls": "Pull Requests",
+        "repositories": "Repositories"
     },
     "stash": {
         "scenes": "Scenes",
@@ -1010,5 +1019,40 @@
         "issues": "Issues",
         "merges": "Merge Requests",
         "projects": "Projects"
+    },
+    "apcups": {
+        "status": "Κατάσταση",
+        "load": "Φόρτωση",
+        "bcharge": "Battery Charge",
+        "timeleft": "Χρόνος που απομένει"
+    },
+    "karakeep": {
+        "bookmarks": "Bookmarks",
+        "favorites": "Favorites",
+        "archived": "Archived",
+        "highlights": "Highlights",
+        "lists": "Lists",
+        "tags": "Ετικέτες"
+    },
+    "slskd": {
+        "slskStatus": "Δίκτυο",
+        "connected": "Συνδέθηκε",
+        "disconnected": "Αποσυνδέθηκε",
+        "updateStatus": "Update",
+        "update_yes": "Διαθέσιμο",
+        "update_no": "Ενημερωμένο",
+        "downloads": "Downloads",
+        "uploads": "Uploads",
+        "sharedFiles": "Αρχεία"
+    },
+    "jellystat": {
+        "songs": "Τραγούδια",
+        "movies": "Ταινίες",
+        "episodes": "Επεισόδια",
+        "other": "Other"
+    },
+    "checkmk": {
+        "serviceErrors": "Service issues",
+        "hostErrors": "Host issues"
     }
 }

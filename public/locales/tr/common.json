@@ -148,7 +148,9 @@
         "up": "Yükleme",
         "received": "Alınan",
         "sent": "Gönderilen",
-        "externalIPAddress": "Harici IP"
+        "externalIPAddress": "Harici IP",
+        "externalIPv6Address": "Ext. IPv6",
+        "externalIPv6Prefix": "Ext. IPv6-Prefix"
     },
     "caddy": {
         "upstreams": "Akış",
@@ -176,7 +178,7 @@
         "connectedAp": "Bağlı AP'ler",
         "activeUser": "Aktif cihazlar",
         "alerts": "Alarmlar",
-        "connectedGateway": "Bağlı ağ geçitleri",
+        "connectedGateways": "Connected gateways",
         "connectedSwitches": "Bağlı anahtarlar"
     },
     "nzbget": {
@@ -566,7 +568,8 @@
     "gluetun": {
         "public_ip": "Açık IP",
         "region": "Bölge",
-        "country": "Ülke"
+        "country": "Ülke",
+        "port_forwarded": "Port Forwarded"
     },
     "hdhomerun": {
         "channels": "Kanallar",
@@ -701,6 +704,10 @@
         "processing": "İşleniyor",
         "processed": "İşlendi",
         "time": "Zaman"
+    },
+    "firefly": {
+        "networth": "Net Worth",
+        "budget": "Budget"
     },
     "grafana": {
         "dashboards": "Kontrol Paneli",
@@ -850,7 +857,8 @@
         "physicalRelease": "Fiziksel Yayınlanan",
         "digitalRelease": "Dijitalde Yayınlandı",
         "noEventsToday": "Bugün için etkinlik yok!",
-        "noEventsFound": "Etkinlik bulunamadı"
+        "noEventsFound": "Etkinlik bulunamadı",
+        "errorWhenLoadingData": "Error when loading calendar data"
     },
     "romm": {
         "platforms": "Platformlar",
@@ -879,7 +887,8 @@
     "gitea": {
         "notifications": "Bildirimler",
         "issues": "Sorunlar",
-        "pulls": "Değişiklik İstekleri"
+        "pulls": "Değişiklik İstekleri",
+        "repositories": "Repositories"
     },
     "stash": {
         "scenes": "Sahneler",
@@ -1010,5 +1019,40 @@
         "issues": "Sorunlar",
         "merges": "Merge Requests",
         "projects": "Projects"
+    },
+    "apcups": {
+        "status": "Durum",
+        "load": "Yük",
+        "bcharge": "Pil Yüzdesi",
+        "timeleft": "Kalan Zaman"
+    },
+    "karakeep": {
+        "bookmarks": "Bookmarks",
+        "favorites": "Favorites",
+        "archived": "Archived",
+        "highlights": "Highlights",
+        "lists": "Lists",
+        "tags": "Etiketler"
+    },
+    "slskd": {
+        "slskStatus": "Ağ",
+        "connected": "Bağlandı",
+        "disconnected": "Bağlantı kesildi",
+        "updateStatus": "Update",
+        "update_yes": "Kullanılabilir",
+        "update_no": "Güncel",
+        "downloads": "Downloads",
+        "uploads": "Uploads",
+        "sharedFiles": "Dosyalar"
+    },
+    "jellystat": {
+        "songs": "Şarkılar",
+        "movies": "Filmler",
+        "episodes": "Bölümler",
+        "other": "Other"
+    },
+    "checkmk": {
+        "serviceErrors": "Service issues",
+        "hostErrors": "Host issues"
     }
 }

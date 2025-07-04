@@ -25,13 +25,13 @@ To configure Kubernetes gateway-api, ingress or ingressRoute service discovery, 
 Example settings:
 
 ```yaml
-ingress: true # enable ingress only
+ingress: true # default, enable ingress only
 ```
 
 or
 
 ```yaml
-ingress: true # enable ingress
+ingress: true # default, enable ingress
 traefik: true # enable traefik ingressRoute
 gateway: true # enable gateway-api
 ```
@@ -162,6 +162,18 @@ If the `href` attribute is not present, Homepage will ignore the specific Ingres
 ### Gateway API HttpRoute support
 
 Homepage also features automatic service discovery for Gateway API. Service definitions are read by annotating the HttpRoute custom resource definition and are indentical to the Ingress example as defined in [Automatic Service Discovery](#automatic-service-discovery).
+
+To enable Gateway API HttpRoute update `kubernetes.yaml` to include:
+
+```
+gateway: true # enable gateway-api
+```
+
+#### Using the unoffocial helm chart?
+
+If you are using the unofficial helm chart ensure that the `ClusterRole` has required permissions for `gateway.networking.k8s.io`.
+
+See [ClusterRole and ClusterRoleBinding](../installation/k8s.md#clusterrole-and-clusterrolebinding)
 
 ## Caveats
 

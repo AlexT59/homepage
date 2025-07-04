@@ -148,7 +148,9 @@
         "up": "يعمل",
         "received": "تم الإستلام",
         "sent": "تم الإرسال",
-        "externalIPAddress": "IP الخارجي"
+        "externalIPAddress": "IP الخارجي",
+        "externalIPv6Address": "Ext. IPv6",
+        "externalIPv6Prefix": "Ext. IPv6-Prefix"
     },
     "caddy": {
         "upstreams": "تدفق",
@@ -176,7 +178,7 @@
         "connectedAp": "المتصلة APs",
         "activeUser": "الأجهزة النشطة",
         "alerts": "تنبيهات",
-        "connectedGateway": "البوابات المتصلة",
+        "connectedGateways": "Connected gateways",
         "connectedSwitches": "مفاتيح التبديل المتصلة"
     },
     "nzbget": {
@@ -566,7 +568,8 @@
     "gluetun": {
         "public_ip": "العام IP",
         "region": "منطقة",
-        "country": "الدولة"
+        "country": "الدولة",
+        "port_forwarded": "Port Forwarded"
     },
     "hdhomerun": {
         "channels": "القنوات",
@@ -701,6 +704,10 @@
         "processing": "معالجة",
         "processed": "معالجة",
         "time": "الوقت"
+    },
+    "firefly": {
+        "networth": "Net Worth",
+        "budget": "Budget"
     },
     "grafana": {
         "dashboards": "لوحات المعلومات",
@@ -850,7 +857,8 @@
         "physicalRelease": "الإصدار المادي",
         "digitalRelease": "الإصدار الرقمي",
         "noEventsToday": "لا توجد أحداث اليوم!",
-        "noEventsFound": "لم يتم العثور على أحداث"
+        "noEventsFound": "لم يتم العثور على أحداث",
+        "errorWhenLoadingData": "Error when loading calendar data"
     },
     "romm": {
         "platforms": "المِنصات",
@@ -879,7 +887,8 @@
     "gitea": {
         "notifications": "الإشعارات",
         "issues": "المُشكِلات",
-        "pulls": "طلبات السحب"
+        "pulls": "طلبات السحب",
+        "repositories": "Repositories"
     },
     "stash": {
         "scenes": "المشاهد",
@@ -1010,5 +1019,40 @@
         "issues": "المُشكِلات",
         "merges": "Merge Requests",
         "projects": "Projects"
+    },
+    "apcups": {
+        "status": "الحالة",
+        "load": "الضغط",
+        "bcharge": "شحن البطارية",
+        "timeleft": "الوقت المتبقي"
+    },
+    "karakeep": {
+        "bookmarks": "Bookmarks",
+        "favorites": "Favorites",
+        "archived": "Archived",
+        "highlights": "Highlights",
+        "lists": "Lists",
+        "tags": "التصنيفات"
+    },
+    "slskd": {
+        "slskStatus": "الشبكة",
+        "connected": "متصل",
+        "disconnected": "غير متصل",
+        "updateStatus": "Update",
+        "update_yes": "متاح",
+        "update_no": "حتى الآن",
+        "downloads": "Downloads",
+        "uploads": "Uploads",
+        "sharedFiles": "ملفات"
+    },
+    "jellystat": {
+        "songs": "أغاني",
+        "movies": "أفلام",
+        "episodes": "حلقات",
+        "other": "Other"
+    },
+    "checkmk": {
+        "serviceErrors": "Service issues",
+        "hostErrors": "Host issues"
     }
 }

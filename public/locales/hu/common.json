@@ -148,7 +148,9 @@
         "up": "Fel",
         "received": "Fogadott",
         "sent": "Küldött",
-        "externalIPAddress": "Külső IP cím"
+        "externalIPAddress": "Külső IP cím",
+        "externalIPv6Address": "Ext. IPv6",
+        "externalIPv6Prefix": "Ext. IPv6-Prefix"
     },
     "caddy": {
         "upstreams": "Upstreamek",
@@ -176,7 +178,7 @@
         "connectedAp": "Csatlakoztatott AP-k",
         "activeUser": "Aktív eszközök",
         "alerts": "Riasztások",
-        "connectedGateway": "Csatlakoztatott gateway-ek",
+        "connectedGateways": "Connected gateways",
         "connectedSwitches": "Csatlakoztatott switch-ek"
     },
     "nzbget": {
@@ -566,7 +568,8 @@
     "gluetun": {
         "public_ip": "Nyilvános IP-cím",
         "region": "Régió",
-        "country": "Ország"
+        "country": "Ország",
+        "port_forwarded": "Port Forwarded"
     },
     "hdhomerun": {
         "channels": "Csatornák",
@@ -701,6 +704,10 @@
         "processing": "Feldolgozás",
         "processed": "Feldolgozott",
         "time": "Idő"
+    },
+    "firefly": {
+        "networth": "Nettó érték",
+        "budget": "Költségkeret"
     },
     "grafana": {
         "dashboards": "Műszerfalak",
@@ -850,7 +857,8 @@
         "physicalRelease": "Fizikai kiadás",
         "digitalRelease": "Digitális kiadás",
         "noEventsToday": "Ezen a napon nincsenek események!",
-        "noEventsFound": "Nem található esemény"
+        "noEventsFound": "Nem található esemény",
+        "errorWhenLoadingData": "Error when loading calendar data"
     },
     "romm": {
         "platforms": "Felület",
@@ -879,7 +887,8 @@
     "gitea": {
         "notifications": "Üzenetek",
         "issues": "Problémák",
-        "pulls": "Pull request-ek"
+        "pulls": "Pull request-ek",
+        "repositories": "Repositories"
     },
     "stash": {
         "scenes": "Jelenetek",
@@ -1010,5 +1019,40 @@
         "issues": "Problémák",
         "merges": "Merge kérések",
         "projects": "Projektek"
+    },
+    "apcups": {
+        "status": "Státusz",
+        "load": "Terhelés",
+        "bcharge": "Akku töltöttsége",
+        "timeleft": "Hátralévő idő"
+    },
+    "karakeep": {
+        "bookmarks": "Bookmarks",
+        "favorites": "Favorites",
+        "archived": "Archived",
+        "highlights": "Highlights",
+        "lists": "Lists",
+        "tags": "Címkék"
+    },
+    "slskd": {
+        "slskStatus": "Hálózat",
+        "connected": "Csatlakozva",
+        "disconnected": "Kapcsolat bontva",
+        "updateStatus": "Update",
+        "update_yes": "Elérhető",
+        "update_no": "Naprakész",
+        "downloads": "Downloads",
+        "uploads": "Uploads",
+        "sharedFiles": "Fájlok"
+    },
+    "jellystat": {
+        "songs": "Zeneszám",
+        "movies": "Film",
+        "episodes": "Epizód",
+        "other": "Other"
+    },
+    "checkmk": {
+        "serviceErrors": "Service issues",
+        "hostErrors": "Host issues"
     }
 }

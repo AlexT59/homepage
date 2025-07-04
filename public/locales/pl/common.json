@@ -148,7 +148,9 @@
         "up": "Dostępny",
         "received": "Odebrane",
         "sent": "Wysłane",
-        "externalIPAddress": "Pub. IP"
+        "externalIPAddress": "Pub. IP",
+        "externalIPv6Address": "Zewn. IPv6",
+        "externalIPv6Prefix": "Zewn. prefiks IPv6"
     },
     "caddy": {
         "upstreams": "Upstreams",
@@ -176,7 +178,7 @@
         "connectedAp": "Połączone punkty dostępowe",
         "activeUser": "Aktywne urządzenia",
         "alerts": "Alarmy",
-        "connectedGateway": "Połączone bramy",
+        "connectedGateways": "Połączone bramy",
         "connectedSwitches": "Połączone przełączniki"
     },
     "nzbget": {
@@ -566,7 +568,8 @@
     "gluetun": {
         "public_ip": "Adres publiczny",
         "region": "Region",
-        "country": "Państwo"
+        "country": "Państwo",
+        "port_forwarded": "Port Forwarded"
     },
     "hdhomerun": {
         "channels": "Kanały",
@@ -701,6 +704,10 @@
         "processing": "Przetwarzane",
         "processed": "Przetworzone",
         "time": "Czas"
+    },
+    "firefly": {
+        "networth": "Wartość netto",
+        "budget": "Budżet"
     },
     "grafana": {
         "dashboards": "Panel główny",
@@ -850,7 +857,8 @@
         "physicalRelease": "Wydanie fizyczne",
         "digitalRelease": "Wydanie cyfrowe",
         "noEventsToday": "Brak wydarzeń na dziś!",
-        "noEventsFound": "Nie znaleziono wydarzeń"
+        "noEventsFound": "Nie znaleziono wydarzeń",
+        "errorWhenLoadingData": "Wystąpił błąd podczas ładowania danych kalendarza"
     },
     "romm": {
         "platforms": "Platformy",
@@ -879,7 +887,8 @@
     "gitea": {
         "notifications": "Powiadomienia",
         "issues": "Zgłoszenia",
-        "pulls": "Żądania Pull"
+        "pulls": "Żądania Pull",
+        "repositories": "Repozytoria"
     },
     "stash": {
         "scenes": "Sceny",
@@ -1010,5 +1019,40 @@
         "issues": "Zgłoszenia",
         "merges": "Żądania scaleń",
         "projects": "Projekty"
+    },
+    "apcups": {
+        "status": "Stan",
+        "load": "Obciążenie",
+        "bcharge": "Stan baterii",
+        "timeleft": "Pozostało"
+    },
+    "karakeep": {
+        "bookmarks": "Zakładki",
+        "favorites": "Ulubione",
+        "archived": "Zarchiwizowane",
+        "highlights": "Wyróżnione",
+        "lists": "Listy",
+        "tags": "Tagi"
+    },
+    "slskd": {
+        "slskStatus": "Sieć",
+        "connected": "Połączono",
+        "disconnected": "Rozłączono",
+        "updateStatus": "Aktualizacja",
+        "update_yes": "Dostępne",
+        "update_no": "Aktualny",
+        "downloads": "Pobieranie",
+        "uploads": "Przesyłanie",
+        "sharedFiles": "Pliki"
+    },
+    "jellystat": {
+        "songs": "Piosenki",
+        "movies": "Filmy",
+        "episodes": "Odcinki",
+        "other": "Inne"
+    },
+    "checkmk": {
+        "serviceErrors": "Service issues",
+        "hostErrors": "Host issues"
     }
 }

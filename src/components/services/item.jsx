@@ -1,15 +1,17 @@
 import classNames from "classnames";
+import ResolvedIcon from "components/resolvedicon";
 import { useContext, useState } from "react";
+import { SettingsContext } from "utils/contexts/settings";
 import Docker from "widgets/docker/component";
 import Kubernetes from "widgets/kubernetes/component";
-import { SettingsContext } from "utils/contexts/settings";
-import ResolvedIcon from "components/resolvedicon";
+import ProxmoxVM from "widgets/proxmoxvm/component";
 
+import KubernetesStatus from "./kubernetes-status";
+import Ping from "./ping";
+import ProxmoxStatus from "./proxmox-status";
+import SiteMonitor from "./site-monitor";
 import Status from "./status";
 import Widget from "./widget";
-import Ping from "./ping";
-import SiteMonitor from "./site-monitor";
-import KubernetesStatus from "./kubernetes-status";
 
 export default function Item({ service, groupName, useEqualHeights }) {
   const hasLink = service.href && service.href !== "#";
@@ -46,13 +48,13 @@ export default function Item({ service, groupName, useEqualHeights }) {
                 href={service.href}
                 target={service.target ?? settings.target ?? "_blank"}
                 rel="noreferrer"
-                className="flex-shrink-0 flex items-center justify-center w-12 service-icon z-10"
+                className="shrink-0 flex items-center justify-center w-12 service-icon z-10"
                 aria-label={service.icon}
               >
                 <ResolvedIcon icon={service.icon} />
               </a>
             ) : (
-              <div className="flex-shrink-0 flex items-center justify-center w-12 service-icon z-10">
+              <div className="shrink-0 flex items-center justify-center w-12 service-icon z-10">
                 <ResolvedIcon icon={service.icon} />
               </div>
             ))}
@@ -88,14 +90,14 @@ export default function Item({ service, groupName, useEqualHeights }) {
             } z-10 service-tags`}
           >
             {service.ping && (
-              <div className="flex-shrink-0 flex items-center justify-center service-tag service-ping">
+              <div className="shrink-0 flex items-center justify-center service-tag service-ping">
                 <Ping groupName={groupName} serviceName={service.name} style={statusStyle} />
                 <span className="sr-only">Ping status</span>
               </div>
             )}
 
             {service.siteMonitor && (
-              <div className="flex-shrink-0 flex items-center justify-center service-tag service-site-monitor">
+              <div className="shrink-0 flex items-center justify-center service-tag service-site-monitor">
                 <SiteMonitor groupName={groupName} serviceName={service.name} style={statusStyle} />
                 <span className="sr-only">Site monitor status</span>
               </div>
@@ -105,7 +107,7 @@ export default function Item({ service, groupName, useEqualHeights }) {
               <button
                 type="button"
                 onClick={() => (statsOpen ? closeStats() : setStatsOpen(true))}
-                className="flex-shrink-0 flex items-center justify-center cursor-pointer service-tag service-container-stats"
+                className="shrink-0 flex items-center justify-center cursor-pointer service-tag service-container-stats"
               >
                 <Status service={service} style={statusStyle} />
                 <span className="sr-only">View container stats</span>
@@ -115,10 +117,20 @@ export default function Item({ service, groupName, useEqualHeights }) {
               <button
                 type="button"
                 onClick={() => (statsOpen ? closeStats() : setStatsOpen(true))}
-                className="flex-shrink-0 flex items-center justify-center cursor-pointer service-tag service-app"
+                className="shrink-0 flex items-center justify-center cursor-pointer service-tag service-app"
               >
                 <KubernetesStatus service={service} style={statusStyle} />
                 <span className="sr-only">View container stats</span>
+              </button>
+            )}
+            {service.proxmoxNode && service.proxmoxVMID && (
+              <button
+                type="button"
+                onClick={() => (statsOpen ? closeStats() : setStatsOpen(true))}
+                className="shrink-0 flex items-center justify-center cursor-pointer service-tag service-proxmoxstatus"
+              >
+                <ProxmoxStatus service={service} style={statusStyle} />
+                <span className="sr-only">View Proxmox stats</span>
               </button>
             )}
           </div>
@@ -127,7 +139,7 @@ export default function Item({ service, groupName, useEqualHeights }) {
         {service.container && service.server && (
           <div
             className={classNames(
-              showStats || (statsOpen && !statsClosing) ? "max-h-[110px] opacity-100" : " max-h-[0] opacity-0",
+              showStats || (statsOpen && !statsClosing) ? "max-h-[110px] opacity-100" : " max-h-0 opacity-0",
               "w-full overflow-hidden transition-all duration-300 ease-in-out service-stats",
             )}
           >
@@ -139,7 +151,7 @@ export default function Item({ service, groupName, useEqualHeights }) {
         {service.app && (
           <div
             className={classNames(
-              showStats || (statsOpen && !statsClosing) ? "max-h-[55px] opacity-100" : " max-h-[0] opacity-0",
+              showStats || (statsOpen && !statsClosing) ? "max-h-[55px] opacity-100" : " max-h-0 opacity-0",
               "w-full overflow-hidden transition-all duration-300 ease-in-out service-stats",
             )}
           >
@@ -147,6 +159,26 @@ export default function Item({ service, groupName, useEqualHeights }) {
               <Kubernetes
                 service={{
                   widget: { namespace: service.namespace, app: service.app, podSelector: service.podSelector },
+                }}
+              />
+            )}
+          </div>
+        )}
+        {service.proxmoxNode && service.proxmoxVMID && (
+          <div
+            className={classNames(
+              showStats || (statsOpen && !statsClosing) ? "max-h-[110px] opacity-100" : " max-h-0 opacity-0",
+              "w-full overflow-hidden transition-all duration-300 ease-in-out service-stats",
+            )}
+          >
+            {(showStats || statsOpen) && (
+              <ProxmoxVM
+                service={{
+                  widget: {
+                    node: service.proxmoxNode,
+                    vmid: service.proxmoxVMID,
+                    type: service.proxmoxType,
+                  },
                 }}
               />
             )}

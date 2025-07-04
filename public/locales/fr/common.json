@@ -57,14 +57,14 @@
         "lan": "LAN",
         "wlan": "WLAN",
         "devices": "Équipt.",
-        "lan_devices": "Équipt. LAN",
+        "lan_devices": "Périphériques LAN",
         "wlan_devices": "Périphériques WLAN",
         "lan_users": "Utilisateurs LAN",
         "wlan_users": "Utilisateurs WLAN",
         "up": "Up",
         "down": "INACTIF",
         "wait": "Veuillez patienter",
-        "empty_data": "Statut sous-système inconnu"
+        "empty_data": "Statut du sous-système inconnu"
     },
     "docker": {
         "rx": "Rx",
@@ -77,14 +77,14 @@
         "unknown": "Inconnu",
         "healthy": "Fonctionnel",
         "starting": "Démarrage",
-        "unhealthy": "Dysfonctionnement",
-        "not_found": "Inconnu",
+        "unhealthy": "Mauvaise santé",
+        "not_found": "Introuvable",
         "exited": "Arrêté",
         "partial": "Partiel"
     },
     "ping": {
         "error": "Erreur",
-        "ping": "Ping",
+        "ping": "Latence",
         "down": "Down",
         "up": "Up",
         "not_available": "Non disponible"
@@ -103,9 +103,9 @@
         "bitrate": "Débit",
         "no_active": "Aucun flux actif",
         "movies": "Films",
-        "series": "Séries TV",
+        "series": "Séries",
         "episodes": "Épisodes",
-        "songs": "Musique"
+        "songs": "Chansons"
     },
     "esphome": {
         "offline": "Hors ligne",
@@ -124,7 +124,7 @@
     },
     "flood": {
         "download": "Récep.",
-        "upload": "Envoi",
+        "upload": "Téléverser",
         "leech": "Leech",
         "seed": "Seed"
     },
@@ -142,25 +142,27 @@
         "connectionStatusDisconnected": "Déconnecté",
         "connectionStatusConnected": "Connecté",
         "uptime": "Démarré depuis",
-        "maxDown": "Max. Bas",
-        "maxUp": "Max. Haut",
+        "maxDown": "Max. Down",
+        "maxUp": "Max. Up",
         "down": "Down",
         "up": "Up",
         "received": "Reçu",
         "sent": "Envoyé",
-        "externalIPAddress": "IP externe"
+        "externalIPAddress": "IP externe",
+        "externalIPv6Address": "IPv6 externe",
+        "externalIPv6Prefix": "Préfixe IPv6 externe"
     },
     "caddy": {
-        "upstreams": "Upstreams",
+        "upstreams": "En amont",
         "requests": "Demandes en cours",
         "requests_failed": "Demandes échouées"
     },
     "changedetectionio": {
         "totalObserved": "Total Observé",
-        "diffsDetected": "Diffs détectées"
+        "diffsDetected": "Différences détectées"
     },
     "channelsdvrserver": {
-        "shows": "Affichages",
+        "shows": "Séries",
         "recordings": "Enregistrements",
         "scheduled": "Planifié",
         "passes": "Passes"
@@ -174,10 +176,10 @@
     },
     "omada": {
         "connectedAp": "AP connectés",
-        "activeUser": "Équipts actifs",
+        "activeUser": "Périphériques actifs",
         "alerts": "Alertes",
-        "connectedGateway": "Passerelles connectées",
-        "connectedSwitches": "Switches connectés"
+        "connectedGateways": "Passerelles connectées",
+        "connectedSwitches": "Switchs connectés"
     },
     "nzbget": {
         "rate": "Débit",
@@ -188,7 +190,7 @@
         "streams": "Flux actif",
         "albums": "Albums",
         "movies": "Films",
-        "tv": "Séries TV"
+        "tv": "Séries"
     },
     "sabnzbd": {
         "rate": "Débit",
@@ -197,32 +199,32 @@
     },
     "rutorrent": {
         "active": "Actif",
-        "upload": "Envoi",
+        "upload": "Téléverser",
         "download": "Récep."
     },
     "transmission": {
         "download": "Récep.",
-        "upload": "Envoi",
+        "upload": "Téléverser",
         "leech": "Leech",
         "seed": "Seed"
     },
     "qbittorrent": {
         "download": "Récep.",
-        "upload": "Envoi",
+        "upload": "Téléverser",
         "leech": "Leech",
         "seed": "Seed"
     },
     "qnap": {
-        "cpuUsage": "Cpu",
-        "memUsage": "Mém",
-        "systemTempC": "Temp",
-        "poolUsage": "Pool",
-        "volumeUsage": "Volume",
+        "cpuUsage": "Processeur utilisé",
+        "memUsage": "Mémoire utilisée",
+        "systemTempC": "Température système",
+        "poolUsage": "Utilisation de la pool",
+        "volumeUsage": "Utilisation du volume",
         "invalid": "Invalide"
     },
     "deluge": {
         "download": "Récep.",
-        "upload": "Envoi",
+        "upload": "Téléverser",
         "leech": "Leech",
         "seed": "Seed"
     },
@@ -232,33 +234,33 @@
     },
     "downloadstation": {
         "download": "Récep.",
-        "upload": "Envoi",
+        "upload": "Téléverser",
         "leech": "Leech",
         "seed": "Seed"
     },
     "sonarr": {
-        "wanted": "Demande",
-        "queued": "Attente",
-        "series": "Séries TV",
+        "wanted": "Demandé",
+        "queued": "En file d'attente",
+        "series": "Séries",
         "queue": "En attente",
         "unknown": "Inconnu"
     },
     "radarr": {
-        "wanted": "Demande",
+        "wanted": "Demandé",
         "missing": "Manquant",
-        "queued": "Attente",
+        "queued": "En file d'attente",
         "movies": "Films",
         "queue": "En attente",
         "unknown": "Inconnu"
     },
     "lidarr": {
-        "wanted": "Demande",
-        "queued": "Attente",
+        "wanted": "Demandé",
+        "queued": "En file d'attente",
         "artists": "Artistes"
     },
     "readarr": {
-        "wanted": "Demande",
-        "queued": "Attente",
+        "wanted": "Demandé",
+        "queued": "En file d'attente",
         "books": "Livres"
     },
     "bazarr": {
@@ -267,18 +269,18 @@
     },
     "ombi": {
         "pending": "En attente",
-        "approved": "Validé",
+        "approved": "Approuvé",
         "available": "Disponible"
     },
     "jellyseerr": {
         "pending": "En attente",
-        "approved": "Validé",
+        "approved": "Approuvé",
         "available": "Disponible"
     },
     "overseerr": {
         "pending": "En attente",
-        "processing": "Traitement",
-        "approved": "Validé",
+        "processing": "En cours de traitement",
+        "approved": "Approuvé",
         "available": "Disponible"
     },
     "netalertx": {
@@ -290,7 +292,7 @@
     "pihole": {
         "queries": "Requêtes",
         "blocked": "Bloqué",
-        "blocked_percent": "Bloqué %",
+        "blocked_percent": "% bloqué",
         "gravity": "Listes dom. bloqués"
     },
     "adguard": {
@@ -300,9 +302,9 @@
         "latency": "Latence"
     },
     "speedtest": {
-        "upload": "Envoi",
+        "upload": "Téléverser",
         "download": "Récep.",
-        "ping": "Ping"
+        "ping": "Latence"
     },
     "portainer": {
         "running": "Démarré",
@@ -335,7 +337,7 @@
     },
     "technitium": {
         "totalQueries": "Requêtes",
-        "totalNoError": "Effectué avec succès",
+        "totalNoError": "Succès",
         "totalServerFailure": "Échecs",
         "totalNxDomain": "Domaines NX",
         "totalRefused": "Refusés",
@@ -349,8 +351,8 @@
     "tdarr": {
         "queue": "En attente",
         "processed": "Traité",
-        "errored": "En erreur",
-        "saved": "Libéré"
+        "errored": "Erroné",
+        "saved": "Enregistré"
     },
     "traefik": {
         "routers": "Routeurs",
@@ -374,36 +376,36 @@
         "30days": "30 Jours"
     },
     "gotify": {
-        "apps": "Applis",
+        "apps": "Applications",
         "clients": "Clients",
-        "messages": "Msg"
+        "messages": "Messages"
     },
     "prowlarr": {
         "enableIndexers": "Indexeur",
-        "numberOfGrabs": "Capture",
+        "numberOfGrabs": "Captures",
         "numberOfQueries": "Requêtes",
-        "numberOfFailGrabs": "Capt. échouée",
-        "numberOfFailQueries": "Dem. échouée"
+        "numberOfFailGrabs": "Captures échouées",
+        "numberOfFailQueries": "Demandes échouées"
     },
     "jackett": {
         "configured": "Configuré",
-        "errored": "En erreur"
+        "errored": "Erroné"
     },
     "strelaysrv": {
         "numActiveSessions": "Sessions",
-        "numConnections": "Cnx",
+        "numConnections": "Connexions",
         "dataRelayed": "Relayé",
         "transferRate": "Débit"
     },
     "mastodon": {
         "user_count": "Utilisateurs",
-        "status_count": "Messages",
+        "status_count": "Articles",
         "domain_count": "Domaines"
     },
     "medusa": {
-        "wanted": "Demande",
-        "queued": "Attente",
-        "series": "Séries TV"
+        "wanted": "Demandé",
+        "queued": "En file d'attente",
+        "series": "Séries"
     },
     "minecraft": {
         "players": "Joueurs",
@@ -418,13 +420,13 @@
     },
     "authentik": {
         "users": "Utilisateurs",
-        "loginsLast24H": "Cnx. (24h)",
-        "failedLoginsLast24H": "Cnx. échouées (24h)"
+        "loginsLast24H": "Connexions (24 h)",
+        "failedLoginsLast24H": "Connexions échouées (24 h)"
     },
     "proxmox": {
         "mem": "MÉM",
         "cpu": "CPU",
-        "lxc": "LxC",
+        "lxc": "LXC",
         "vms": "VMs"
     },
     "glances": {
@@ -432,7 +434,7 @@
         "load": "Charge",
         "wait": "Veuillez patienter",
         "temp": "Temp",
-        "_temp": "T°",
+        "_temp": "Température",
         "warn": "Alerte",
         "uptime": "Up",
         "total": "Total",
@@ -443,12 +445,12 @@
         "crit": "Crit.",
         "read": "Lu",
         "write": "Écrit.",
-        "gpu": "GPU",
+        "gpu": "Carte Graphique",
         "mem": "Mém.",
         "swap": "Swap"
     },
     "quicklaunch": {
-        "bookmark": "Signet",
+        "bookmark": "Marque-Page",
         "service": "Service",
         "search": "Recherche",
         "custom": "Personnalisé",
@@ -458,13 +460,13 @@
     },
     "wmo": {
         "0-day": "Ensoleillé",
-        "0-night": "Ciel clair",
+        "0-night": "Clair",
         "1-day": "Principalement ensoleillé",
         "1-night": "Principalement clair",
-        "2-day": "Partiellement couvert",
-        "2-night": "Partiellement couvert",
-        "3-day": "Couvert",
-        "3-night": "Couvert",
+        "2-day": "Partiellement nuageux",
+        "2-night": "Partiellement nuageux",
+        "3-day": "Nuageux",
+        "3-night": "Nuageux",
         "45-day": "Brumeux",
         "45-night": "Brumeux",
         "48-day": "Brumeux",
@@ -483,14 +485,14 @@
         "61-night": "Pluie légère",
         "63-day": "Pluie",
         "63-night": "Pluie",
-        "65-day": "Pluie forte",
-        "65-night": "Pluie forte",
+        "65-day": "Forte pluie",
+        "65-night": "Forte pluie",
         "66-day": "Pluie verglaçante",
         "66-night": "Pluie verglaçante",
         "67-day": "Pluie verglaçante",
         "67-night": "Pluie verglaçante",
-        "71-day": "Neige légère",
-        "71-night": "Neige légère",
+        "71-day": "Légères chutes de neige",
+        "71-night": "Légères chutes de neige",
         "73-day": "Neige",
         "73-night": "Neige",
         "75-day": "Neige abondante",
@@ -541,7 +543,7 @@
         "containers_failed": "Échoué"
     },
     "autobrr": {
-        "approvedPushes": "Validé",
+        "approvedPushes": "Approuvé",
         "rejectedPushes": "Rejeté",
         "filters": "Filtres",
         "indexers": "Indexeur"
@@ -550,7 +552,7 @@
         "downloads": "En attente",
         "videos": "Vidéos",
         "channels": "Chaînes",
-        "playlists": "Playlists"
+        "playlists": "Listes de lecture"
     },
     "truenas": {
         "load": "Charge Système",
@@ -566,7 +568,8 @@
     "gluetun": {
         "public_ip": "IP publique",
         "region": "Région",
-        "country": "Pays"
+        "country": "Pays",
+        "port_forwarded": "Port Transféré"
     },
     "hdhomerun": {
         "channels": "Chaînes",
@@ -590,9 +593,9 @@
         "total": "Total"
     },
     "peanut": {
-        "battery_charge": "Charge Batterie",
-        "ups_load": "Charge de l'UPS",
-        "ups_status": "État de l'UPS",
+        "battery_charge": "Charge de la batterie",
+        "ups_load": "Charge de l’ASI",
+        "ups_status": "État de l’ASI",
         "online": "En ligne",
         "on_battery": "Sur Batterie",
         "low_battery": "Batterie Faible"
@@ -602,8 +605,8 @@
         "no_devices": "Aucune donnée d'appareil reçue"
     },
     "mikrotik": {
-        "cpuLoad": "Charge CPU",
-        "memoryUsed": "Mém. Utilisée",
+        "cpuLoad": "Charge du processeur",
+        "memoryUsed": "Mémoire utilisée",
         "uptime": "Démarré depuis",
         "numberOfLeases": "Baux"
     },
@@ -615,25 +618,25 @@
     "opendtu": {
         "yieldDay": "Aujourd'hui",
         "absolutePower": "Puissance",
-        "relativePower": "Puissance %",
+        "relativePower": "% de puissance",
         "limit": "Limite"
     },
     "opnsense": {
-        "cpu": "Charge CPU",
-        "memory": "Mém. utilisée",
+        "cpu": "Charge du processeur",
+        "memory": "Mémoire utilisée",
         "wanUpload": "WAN Envoi",
         "wanDownload": "WAN Récep."
     },
     "moonraker": {
-        "printer_state": "État Imprimante",
-        "print_status": "Statut Imprimante",
+        "printer_state": "État de l'imprimante",
+        "print_status": "Statut de l'imprimante",
         "print_progress": "Progression",
         "layers": "Couches"
     },
     "octoprint": {
         "printer_state": "Statut",
-        "temp_tool": "Tool T°",
-        "temp_bed": "Bed T°",
+        "temp_tool": "Temp. de l'outil",
+        "temp_bed": "Temp. du lit",
         "job_completion": "Achèvement"
     },
     "cloudflared": {
@@ -646,7 +649,7 @@
         "wanStatus": "Statut WAN",
         "up": "Up",
         "down": "Down",
-        "temp": "T°",
+        "temp": "Température",
         "disk": "Util. Disque",
         "wanIP": "IP WAN"
     },
@@ -670,14 +673,14 @@
         "m": "m"
     },
     "atsumeru": {
-        "series": "Séries TV",
+        "series": "Séries",
         "archives": "Archives",
         "chapters": "Chapitres",
         "categories": "Catégories"
     },
     "komga": {
         "libraries": "Bibliothèques",
-        "series": "Séries TV",
+        "series": "Séries",
         "books": "Livres"
     },
     "diskstation": {
@@ -686,9 +689,9 @@
         "volumeAvailable": "Disponible"
     },
     "mylar": {
-        "series": "Séries TV",
+        "series": "Séries",
         "issues": "Anomalies",
-        "wanted": "Demande"
+        "wanted": "Demandé"
     },
     "photoprism": {
         "albums": "Albums",
@@ -698,9 +701,13 @@
     },
     "fileflows": {
         "queue": "En attente",
-        "processing": "Traitement",
+        "processing": "En cours de traitement",
         "processed": "Traité",
         "time": "Temps"
+    },
+    "firefly": {
+        "networth": "Valeur Nette",
+        "budget": "Budget"
     },
     "grafana": {
         "dashboards": "Tableau de bord",
@@ -754,9 +761,9 @@
         "booksDuration": "Durée"
     },
     "homeassistant": {
-        "people_home": "People Home",
+        "people_home": "Personne à la maison",
         "lights_on": "Lumières allumées",
-        "switches_on": "Commutateur On"
+        "switches_on": "Interrupteurs allumés"
     },
     "whatsupdocker": {
         "monitoring": "Conteneurs",
@@ -766,7 +773,7 @@
         "books": "Livres",
         "authors": "Auteurs",
         "categories": "Catégories",
-        "series": "Séries TV"
+        "series": "Séries"
     },
     "jdownloader": {
         "downloadCount": "En attente",
@@ -775,7 +782,7 @@
         "downloadSpeed": "Débit"
     },
     "kavita": {
-        "seriesCount": "Séries TV",
+        "seriesCount": "Séries",
         "totalFiles": "Fichiers"
     },
     "azuredevops": {
@@ -789,7 +796,7 @@
         "inProgress": "En cours",
         "totalPrs": "PRs Total",
         "myPrs": "Mes PRs",
-        "approved": "Validé"
+        "approved": "Approuvé"
     },
     "gamedig": {
         "status": "Statut",
@@ -800,8 +807,8 @@
         "currentPlayers": "Joueurs actuels",
         "players": "Joueurs",
         "maxPlayers": "Joueurs max",
-        "bots": "Bots",
-        "ping": "Ping"
+        "bots": "Robots",
+        "ping": "Latence"
     },
     "urbackup": {
         "ok": "Ok",
@@ -850,7 +857,8 @@
         "physicalRelease": "Sortie physique",
         "digitalRelease": "Sortie numérique",
         "noEventsToday": "Rien pour aujourd'hui !",
-        "noEventsFound": "Aucun événement trouvé"
+        "noEventsFound": "Aucun événement trouvé",
+        "errorWhenLoadingData": "Error when loading calendar data"
     },
     "romm": {
         "platforms": "Plateformes",
@@ -879,7 +887,8 @@
     "gitea": {
         "notifications": "Notifications",
         "issues": "Anomalies",
-        "pulls": "Demandes de tirage"
+        "pulls": "Demandes de tirage",
+        "repositories": "Dépôts"
     },
     "stash": {
         "scenes": "Scènes",
@@ -912,7 +921,7 @@
     },
     "crowdsec": {
         "alerts": "Alertes",
-        "bans": "Exclusions"
+        "bans": "Bannissements"
     },
     "wgeasy": {
         "connected": "Connecté",
@@ -927,12 +936,12 @@
         "banned": "Banni"
     },
     "myspeed": {
-        "ping": "Ping",
+        "ping": "Latence",
         "download": "Récep.",
-        "upload": "Envoi"
+        "upload": "Téléverser"
     },
     "stocks": {
-        "stocks": "Actions",
+        "stocks": "Stocks",
         "loading": "Chargement",
         "open": "Ouvert - Marché américain",
         "closed": "Fermé - marché américain",
@@ -1010,5 +1019,40 @@
         "issues": "Anomalies",
         "merges": "Demandes de fusion de branches",
         "projects": "Projets"
+    },
+    "apcups": {
+        "status": "Statut",
+        "load": "Charge",
+        "bcharge": "Charge de la batterie",
+        "timeleft": "Temps restant"
+    },
+    "karakeep": {
+        "bookmarks": "Marque-pages",
+        "favorites": "Favoris",
+        "archived": "Archivé",
+        "highlights": "À la une",
+        "lists": "Listes",
+        "tags": "Étiquettes"
+    },
+    "slskd": {
+        "slskStatus": "Réseau",
+        "connected": "Connecté",
+        "disconnected": "Déconnecté",
+        "updateStatus": "Mise à jour",
+        "update_yes": "Disponible",
+        "update_no": "À jour",
+        "downloads": "Téléchargements",
+        "uploads": "Téléversements",
+        "sharedFiles": "Fichiers"
+    },
+    "jellystat": {
+        "songs": "Chansons",
+        "movies": "Films",
+        "episodes": "Épisodes",
+        "other": "Autres"
+    },
+    "checkmk": {
+        "serviceErrors": "Problèmes de service",
+        "hostErrors": "Problèmes d'hôte"
     }
 }
